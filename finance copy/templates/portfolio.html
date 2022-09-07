@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+
+
+<main class=" container text-center">
+
+<table class="table table-striped">
+    <tr>
+      <th scope="col">Symbol</th>
+      <th scope="col">Name</th>
+      <th scope="col">Shares</th>
+      <th scope="col">Price</th>
+      <th scope="col">Total</th>
+    </tr>
+{%for stock in stocks%}
+
+    <tr>
+      <td>{{stock['symbol']}}</td>
+      <td>{{stock['name']}}</td>
+      <td>{{stock['number']}}</td>
+      <td>${{stock['price']}}</td>
+      <td>${{ stock['number'] * stock['price']}}</td>
+
+    </tr>
+{%endfor%}
+
+
+<tr>
+
+  <td></td>
+  <td></td>
+  <td></td>
+  <td class="fw-bold">CASH</td>
+  <td>${{cash}}</td>
+
+</tr>
+
+<tr>
+
+    <td></td>
+    <td></td>
+    <td></td>
+    <td class="fw-bold">TOTAL</td>
+    <td>${{cash + totalStocks}} </td>
+
+  </tr>
+  </table>
+
+</main>
+
+
+{% endblock %}

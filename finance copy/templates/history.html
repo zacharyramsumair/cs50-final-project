@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+
+<main class=" container text-center">
+
+<table class="table table-striped">
+    <tr>
+      <th scope="col">Symbol</th>
+      <th scope="col">Type</th>
+      <th scope="col">Shares</th>
+      <th scope="col">Price</th>
+      <th scope="col">Transacted
+    </th>
+    </tr>
+{%for h in history%}
+
+    <tr>
+      <td>{{h['symbol']}}</td>
+      <td>{{h['type']}}</td>
+      <td>{{h['number']}}</td>
+      <td>${{h['price']}}</td>
+      <td>${{ h['timestamp'] }}</td>
+
+    </tr>
+{%endfor%}
+
+
+
+  </table>
+
+</main>
+
+
+{% endblock %}
