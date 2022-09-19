@@ -1,0 +1,24 @@
+{% extends "myLayout.html" %}
+{% block title %}Error{% endblock %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+
+{% block nav %}{{ super() }}{% endblock %}
+
+{% block content %}
+    <!-- https://memegen.link/ -->
+    <img alt="{{ top }}" class="border img-fluid" src="http://memegen.link/custom/{{ top | urlencode }}/{{ bottom | urlencode }}.jpg?alt=https://i.imgflip.com/1be3fg.jpg&width=400" title="{{ top }}">
+{% endblock %}
+
+
+{% block nav_js %}
+{{ super() }}
+{% endblock %}
+
+{% block end %}
+{{ super() }}
+{% endblock %}
+
+
+

@@ -1,0 +1,340 @@
+*, *::before,*::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: aliceblue;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   z-index: 1;
+    height: 500px;
+    width: 360px;
+    margin: -1em auto;
+}
+
+.card-greet, .card-info {
+    display: none;
+    position: relative;
+   
+}
+
+.card-info{
+    height: 500px;
+    width: 360px;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none; 
+    position: relative;
+}
+
+
+
+.pic{
+    width:360px; /*width of your image*/
+    height:500px; /*height of your image*/
+    /* background-image:url("https://dubaitrippackages.files.wordpress.com/2017/11/2-imgdinosaurs_base.jpg"); */
+    margin:0; /* If you want no margin */
+    padding:0; /*if your want to padding */
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    display: none;
+
+}
+
+.content{
+    position: relative;
+}
+
+.content-info{
+    height:500px;
+    overflow:auto;
+     background-color:rgba(255, 255, 255, .1);
+     
+     -ms-overflow-style: none;  /* Internet Explorer 10+ */
+     scrollbar-width: none; 
+     margin:0 auto;
+    
+     text-align: left;
+}
+
+    
+.content-info::-webkit-scrollbar { 
+    display: none;
+    }
+
+
+.pic-info{
+    width:360px; /*width of your image*/
+    height:500px; /*height of your image*/
+    /* background-image:url("https://dubaitrippackages.files.wordpress.com/2017/11/2-imgdinosaurs_base.jpg"); */
+    margin:0; /* If you want no margin */
+    padding:0; /*if your want to padding */
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    display: none;
+}
+
+
+
+.name{
+
+    
+    position: absolute;
+    bottom: 2em;
+    left: 1em;
+    right: 1em;
+    z-index: 1;
+    color: white;
+    font-size: 1.75rem;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    background-color: rgba(0, 0, 0, 0.6) ;
+    padding: 5px;
+}
+
+.name-info{
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0.5em;
+}
+
+.name-info>a{
+    color: #fe306e;
+}
+
+.more-info-button
+{
+    position: absolute;
+    bottom: 7em;
+    right: 1em;
+    z-index: 1;
+}
+
+
+
+
+
+hr.style-six {
+    margin-top: 1em;
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+.description-info, .sights-info {
+    padding: 1em 1em 0 1em;
+    font-size: 1.3rem;
+    color: #505965;
+
+}
+
+.sights-info > div{
+    font-weight: bold;
+    padding: 1em 0;
+    font-size: 1.5rem;
+    color: black;
+    color: #fe306e;
+}
+
+
+
+
+.controls{
+    position: absolute;
+    bottom: -4em;
+    width: 360px;
+    height: 100px;
+    background-color: black;
+    background: black;
+    color: white;
+    font-size: 1.5rem;
+    
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+
+
+
+.controls-info , .cool {
+    position: absolute;
+    bottom: -2em;
+    width: 360px;
+    height: 94px;
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    cursor: default;
+}
+
+.no,.yes{
+    z-index: 10000;
+    font-weight: bold;
+    font-size: 90px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    
+}
+
+.no{
+    color: red;;
+}
+.yes{
+    color: #66FF00;
+}
+
+.no:hover , .yes:hover{
+    font-size: 93px;
+}
+
+
+
+
+
+.material-symbols-outlined {
+    font-size: 40px;
+    color: white;
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 700,
+    'GRAD' 0,
+    'opsz' 48
+  }
+
+  .back-info-button{
+    
+    z-index: 2;
+    color: black;
+    float: right;
+}
+
+.emptyspace-info{
+    height: 6em;
+   
+}
+
+
+.destination-info{
+    background-color: aliceblue;
+}
+
+
+.card-dark{
+    position: absolute;
+    bottom: -4em;
+    z-index: 1;
+    width: 510px;
+    height: 150px;
+    background-color: black;
+}
+
+
+.nopeStamp{
+    position: absolute;
+    top: 1em;
+    right:1em;
+    transform: rotate(-30deg);
+    z-index: 2;
+    color: red;
+    border: .1em solid red;
+    font-weight: bold;
+    font-size: 4em;
+    display: none;
+    text-shadow:0 0 1px transparent;
+
+
+}
+
+
+.yesStamp{
+    position: absolute;
+    top: 1em;
+    left:1em;
+    transform: rotate(30deg);
+    z-index: 2;
+    color: #228b22;
+    border: .1em solid #228b22;
+    font-weight: bold;
+    font-size: 4em;
+    display: none;
+    text-shadow:0 0 1px transparent;
+
+}
+
+
+
+
+.visible{
+    display: flex;
+}
+
+.dismissed{
+	display: none;
+}
+
+
+.ninjaSubmit{
+    display: none;
+}
+
+ul{
+    padding: 0 1em;
+}
+
+.sights-info {
+    padding-top: 0;
+}
+
+
+@media screen and (min-height: 800px) {
+    .controls-info , .cool {
+        
+        bottom: 1.25em;
+        
+    }
+}
+
+@media screen and (max-height: 700px) {
+    .controls-info , .cool {
+        bottom: -3.5em;
+        background-color: black;       
+    }
+}
+
+
+@media (min-height: 800px) and (max-height: 3000px) {
+  .controls-info{
+    bottom: -3.5em;
+  }
+
+  #swiper, .card, .card-greet, .card-info ,.content , .pic, .pic-info, .content-info{
+    height: 65vh;
+  }
+}

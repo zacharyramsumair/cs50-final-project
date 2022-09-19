@@ -1,0 +1,231 @@
+*, *::before,*::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: aliceblue;
+}
+
+/* main{
+    margin: auto;
+} */
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+    height: 650px;
+    width: 500px;
+    margin: 2em auto;
+}
+
+.card-greet, .card-info {
+    display: none;
+    position: relative;
+   
+}
+
+.card-info{
+    height: 650px;
+    width: 500px;
+    /* margin: 2em auto; */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none; 
+    /* margin-top: 5em; */
+    position: relative;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+
+.visible{
+    display: flex;
+}
+
+.pic{
+    width:500px; /*width of your image*/
+    height:650px; /*height of your image*/
+    background-image:url("https://dubaitrippackages.files.wordpress.com/2017/11/2-imgdinosaurs_base.jpg");
+    margin:0; /* If you want no margin */
+    padding:0; /*if your want to padding */
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+
+}
+
+.content{
+    position: relative;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+
+.content-info{
+    height:650px;
+    overflow:auto;
+     background-color:rgba(255, 255, 255, .1);
+     
+     -ms-overflow-style: none;  /* Internet Explorer 10+ */
+     scrollbar-width: none; 
+     margin:0 auto;
+    
+     text-align: left;
+     /* align-content: left; */
+     border-top-left-radius: 1em;
+     border-top-right-radius: 1em;
+     /* border-bottom-left-radius: 1em;
+     border-bottom-right-radius: 1em; */
+     /* padding: 1em; */
+}
+
+    
+.content-info::-webkit-scrollbar { 
+    display: none;
+    }
+
+
+.pic-info{
+    width:500px; /*width of your image*/
+    height:650px; /*height of your image*/
+    background-image:url("https://dubaitrippackages.files.wordpress.com/2017/11/2-imgdinosaurs_base.jpg");
+    margin:0; /* If you want no margin */
+    padding:0; /*if your want to padding */
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+
+
+.name{
+
+    
+    position: absolute;
+    bottom: 1em;
+    left: 2em;
+    z-index: 1;
+    color: white;
+    font-size: 1.75rem;
+    font-weight: bold;
+    /* padding: 1em; */
+    /* padding: 1em 1em 0 1em; */
+}
+.name-info{
+
+    
+    /* position: absolute; */
+    /* bottom: 1em;
+    left: 2em;
+    z-index: 1; */
+    /* color: white; */
+    font-size: 1.75rem;
+    font-weight: bold;
+    /* padding: 1em; */
+    padding: 1em 1em 0 1em;
+}
+
+.more-info-button
+{
+    position: absolute;
+    bottom: 1em;
+    right: 2em;
+    z-index: 1;
+    /* color: white; */
+    /* font-size: 1.75rem; */
+}
+
+
+
+
+
+hr.style-six {
+    margin-top: 1em;
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+.description-info, .sights-info {
+    padding: 1em 1em 0 1em;
+    font-size: 1.3rem;
+    color: #505965;
+
+}
+
+.sights-info > div{
+    font-weight: bold;
+    padding: 1em 0;
+    font-size: 1.5rem;
+    color: black;
+}
+
+
+.controls{
+    position: absolute;
+    bottom: -4em;
+    width: 500px;
+    height: 100px;
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+    /* left: 2em; */
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    
+}
+
+.controls-info , .buttons{
+    position: absolute;
+    bottom: -4em;
+    width: 500px;
+    height: 100px;
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+    /* left: 2em; */
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+
+
+
+.material-symbols-outlined {
+    font-size: 40px;
+    color: white;
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 700,
+    'GRAD' 0,
+    'opsz' 48
+  }
+
+  .back-info-button{
+    
+    z-index: 2;
+    color: black;
+    float: right;
+}
+
+.emptyspace-info{
+    height: 6em;
+   
+}

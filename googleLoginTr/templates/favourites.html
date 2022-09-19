@@ -1,0 +1,49 @@
+{% extends "myLayout.html" %}
+{% block title %}Favourites{% endblock %}
+{% block head %}
+  {{ super() }}
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />   
+  <link rel="stylesheet" href="/static/css/block.css">
+{% endblock %}
+
+{% block nav %}{{ super() }}{% endblock %}
+
+{% block content %}
+     
+	
+<main>
+
+  <form action="/" method="post">
+    <input type="text" name="name" id="name" placeholder="Search your Destinations">
+  </form>
+      
+    <div class="searchResults" data-searchResults></div>
+
+</main>
+
+
+<script>
+  let None = "none"
+  var array = {{array|safe}}
+  console.log(array)
+
+</script>
+
+<script src="/static/javascript/block.js"></script>
+<script src="/static/javascript/blockStyles.js"></script>
+{% endblock %}
+
+{% block nav_js %}
+{{ super() }}
+{% endblock %}
+
+{% block end %}
+{{ super() }}
+{% endblock %}
+
+
+
+
+
+		
+

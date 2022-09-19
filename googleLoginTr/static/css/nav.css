@@ -1,0 +1,41 @@
+.navbar {
+position: absolute;
+top: 0;
+width: 100vw;
+z-index: 8000;
+margin-top: 0;
+background-color: black;
+}
+
+.bg-dark{
+    background-color: black !important;
+}
+
+
+
+#white-logo{
+    overflow: hidden;
+}
+
+
+.mynavlink{
+    color: #fff;
+    display: block;
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+.nav-logout{
+    color: rgba(255,255,255,.5);;
+}
+
+.navbar-brand:hover , .navbar-brand:focus ,  .nav-link:hover , .nav-link:focus{
+    color: #fe306e !important;
+}
+
+
+.mynavlink:hover{
+    color: #fe306e;
+}
+
+
